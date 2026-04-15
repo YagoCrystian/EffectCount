@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Controle de Efeitos RPG</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<h1>Controle de Efeitos</h1>
+
+<div class="controls">
+
+<button class="btn turno" onclick="passarTurno()">
+<i class="fa-solid fa-forward"></i>
+Passar Turno
+</button>
+
+<button class="btn reset" onclick="resetarTudo()">
+<i class="fa-solid fa-rotate-right"></i>
+Resetar Tudo
+</button>
+
+</div>
+
+<div class="add-character">
+
+<input type="text" id="nomePersonagem" placeholder="Nome do personagem">
+
+<button class="btn adicionar" onclick="adicionarPersonagem()">
+<i class="fa-solid fa-plus"></i>
+Adicionar
+</button>
+
+</div>
+
+<div id="personagens"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
